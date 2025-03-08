@@ -5,12 +5,14 @@ import express, { Request, Response } from 'express';
 const app = express();
 
 // Incluir os Controllers
-import login from './controllers/login';
 
-// Criar as rotas
-app.use('/', login);
+
+// Criar a rota GET principal:
+app.get("/", (req:Request, res:Response) => {
+    res.send("Bem-vindo Celke!");
+});
 
 // Iniciando o servidor:
 app.listen(8080, () => {
-    console.log('Server is running on port 8080');
+    console.log('Server is running on port 8080: http://localhost:8080');
 });
