@@ -136,3 +136,8 @@
 
 ### Instalar os tipos do TypeScript:
     *** npm install --save-dev @types/dotenv
+
+######################### MIGRATIONS ##############################
+### npx typeorm migration:create src/migration/<nome-da-migrations>
+### npx typeorm migration:create src/migration/CreateSituationsTable
+
