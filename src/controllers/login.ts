@@ -17,7 +17,7 @@ AppDataSource.initialize()
 
 // Criar a rota GET principal:
 router.get("/", (req:Request, res:Response) => {
-    res.send("Bem-vindo Celke!!!");
+    res.send("Bem-vindo ao time Celke!");
 });
 
 // Exportar a instrucao que esta dentro da constante router:

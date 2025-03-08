@@ -19,7 +19,7 @@ data_source_1.AppDataSource.initialize()
 });
 // Criar a rota GET principal:
 router.get("/", (req, res) => {
-    res.send("Bem-vindo Celke!!!");
+    res.send("Bem-vindo ao time Celke!");
 });
 // Exportar a instrucao que esta dentro da constante router:
 exports.default = router;

@@ -125,3 +125,14 @@
 
 ### Instalar os tipos do TypeScript:
    *** npm install --save-dev @types/dotenv
+
+### MVC (Arquitetura e estrutura aplicacoes web):
+   * C: Controller(recebe, controla e processa as requisicoes);
+   * V: View(Interface, faz uma requisicao para a controllers, exibi os dados ao usuario);
+   * M: Models(gerencia as interacoes com BD, retorna para controllers);
+
+### Manipular variaveis de ambiente:
+    *** npm install dotenv --save
+
+### Instalar os tipos do TypeScript:
+    *** npm install --save-dev @types/dotenv
