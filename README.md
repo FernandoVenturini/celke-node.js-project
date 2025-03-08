@@ -96,6 +96,14 @@
    *** npm run dev
 
 
+################################################## WATCH ######################################################
+### Compilar o arquivo TypeScript. Executar o arquivo gerado(Rodando o watch):
+    *** npm run start:watch
+
+## Instalar a dependencia para rodar processo simultaneamente:
+    *** npm install --save-dev concurrently
+
+
 ###################################### BANCO DE DADOS MySQL ######################################################
 ### COMANDO SQL PARA CRIAR A BASE DE DADOS:
    *** CREATE DATABASE celke CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
