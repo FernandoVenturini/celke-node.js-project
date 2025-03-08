@@ -112,7 +112,7 @@
    *** npm install typeorm --save
 
 ### Bibliotecas utilizada no TypeScript para adicionar metadados (informcoes adicionais) a classes.
-   *** npm install relect-metadata --save
+   *** npm install reflect-metadata --save
 
 ### Instalar o drive do bnco de dados MySQL:
    *** npm install mysql2 --save
