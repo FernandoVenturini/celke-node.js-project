@@ -1,0 +1,20 @@
+{
+  "name": "celke-node.js-project",
+  "version": "1.0.0",
+  "description": "*** Node.js 22 ou superior - Conferir a versao: node -v",
+  "license": "ISC",
+  "author": "Fernando",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2"
+  }
+}
