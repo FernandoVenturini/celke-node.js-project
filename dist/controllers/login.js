@@ -6,12 +6,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Importando a biblioteca Express:
 const express_1 = __importDefault(require("express"));
 // Criando aplicacao Express:
-const app = (0, express_1.default)();
-// Incluir os Controllers
-const login_1 = __importDefault(require("./controllers/login"));
-// Criar as rotas:
-app.use("/", login_1.default);
-// Iniciando o servidor:
-app.listen(8080, () => {
-    console.log('Server is running on port 8080: http://localhost:8080');
+const router = express_1.default.Router();
+// Criar a rota GET principal:
+router.get("/", (req, res) => {
+    res.send("Bem-vindo Celke!!!");
 });
+// Exportar a instrucao que esta dentro da constante router:
+exports.default = router;
