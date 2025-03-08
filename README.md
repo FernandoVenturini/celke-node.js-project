@@ -31,4 +31,89 @@
     *** node dist/index.js
 
 
+################################################## GITHUB ######################################################
+### Como fazer upload e download de arquivos do Github
 
+*** Baixar arquivos do git
+** git clone -b (nome do branch) (url do nome do repositório)
+
+### Verifique em qual branch você está
+*** git branch
+
+### Mude para o branch desejado:
+
+*** git checkout <nome-do-branch>
+
+### Verifique os branches remotos:
+
+### Enviar os commits locais para um repositório remoto
+*** git push origin -u (nome do branch)
+
+### Enviando o código atualizado para o github pelo vscode
+*** Clique no ícone do git
+*** Clique no +
+*** Escrever uma mensagem de commit
+*** Commit & push
+
+*** git branch -r (Isso listará todos os branches remotos do seu repositório.)
+
+### Buscar os branches remotos:
+
+*** git fetch (Isso atualizará as informações sobre os branches remotos.)
+
+*** Agora, execute git branch -r novamente para verifique se o branch "origin/development" está atualizado.
+
+### Crie um branch local a partir do branch remoto:
+
+*** Após buscar os branches remotos, você pode criar um branch local chamado "branch name" a partir do branch remoto "origin/branch name".
+
+*** Execute o comando git checkout -b branch name origin/branch name no terminal.
+
+*** Isso criará um novo branch local chamado "branch name" e o configurará para rastrear o branch remoto "origin/branch name".
+
+### Baixe atualizações do Github
+
+*** git pull
+
+### Adicione todos os arquivos modificados à área de preparação.
+
+*** git add .
+
+### Commit
+
+*** git commit -m "mensagem de commit aqui"
+
+### Envie commits locais para um repositório remoto
+
+*** git push origin -u (nome do branch)
+
+
+################################################## NODEMON ######################################################
+### Como instalar nodemon
+   *** npm install -g nodemon ou npm install --save-dev nodemon
+
+### Compilar o arquivo TypeScript. Executar o arquivo gerado(Rodando o nodemon):
+   *** npm run dev
+
+
+###################################### BANCO DE DADOS MySQL ######################################################
+### COMANDO SQL PARA CRIAR A BASE DE DADOS:
+   *** CREATE DATABASE celke CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+### Instalar a dependencia para conectar o Node.js (TypeScript) com banco de dados.
+   *** npm install typeorm --save
+
+### Bibliotecas utilizada no TypeScript para adicionar metadados (informcoes adicionais) a classes.
+   *** npm install relect-metadata --save
+
+### Instalar o drive do bnco de dados MySQL:
+   *** npm install mysql2 --save
+
+### Iniciar o MySQL instalado no sistema operacional com PowerShell:
+   *** net start mysql(versao do mysql)
+
+### Digita esse comando no terminal, ea cessa o mysql
+   *** mysql -h localhost -u root -p
+
+### Instalar os tipos do TypeScript:
+   *** npm install --save-dev @types/dotenv
