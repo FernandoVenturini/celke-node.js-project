@@ -1,6 +1,12 @@
 import "reflect-metadata";
 import { DataSource} from "typeorm";
 
+// IMportar a biblioteca variaveis de ambiente:
+import dotenv from 'dotenv';
+
+// Carregar variaveis do arquivo .env:
+dotenv.config();
+
 // Criando variavel referente a constante DB_DIALECT do arquivo .env:
 const dialect = process.env.DB_DIALECT ?? "mysql";
 
@@ -16,5 +22,5 @@ export const AppDataSource = new DataSource({
     logging: true,
     entities: [],
     subscribers: [],
-    migrations: [],
+    migrations: [__dirname + "/migrations/*.js"],
 })

@@ -141,3 +141,5 @@
 ### npx typeorm migration:create src/migration/<nome-da-migrations>
 ### npx typeorm migration:create src/migration/CreateSituationsTable
 
+###Executar as migrations para criar as tabelas no banco de dados:
+npx typeorm migration:run -d dist/data-source.js
