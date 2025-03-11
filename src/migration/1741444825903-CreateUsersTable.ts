@@ -19,7 +19,6 @@ export class CreateUsersTable1741444825903 implements MigrationInterface {
                     type: 'varchar',
 
                 },
-                ,
                 {
                     name: 'email',
                     type: 'varchar',
@@ -29,7 +28,7 @@ export class CreateUsersTable1741444825903 implements MigrationInterface {
                     name: 'situationId',
                     type: 'int',
 
-                }
+                },
                 {
                     name: 'createdAt',
                     type: 'timestamp',
