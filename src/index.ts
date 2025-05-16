@@ -16,6 +16,10 @@ import login from "./controllers/login";
 // Criar as rotas:
 app.use("/", login);
 
+app.get('/', (req, res) => {
+    res.send('Hello Celke!');
+})
+
 // Iniciando o servidor na porta definida na variavel de ambiente:
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}: http://localhost:${process.env.PORT}`);
